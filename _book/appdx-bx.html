@@ -1,0 +1,697 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>附录3：Bitcoin Explorer（bx）命令 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="fappdx-pycoin.md" />
+    
+    
+    <link rel="prev" href="appdx-bitcore.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="cn-preface.html">
+            
+                <a href="cn-preface.html">
+            
+                    
+                    中文版序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="trans-preface.html">
+            
+                <a href="trans-preface.html">
+            
+                    
+                    译者序
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="preface.html">
+            
+                <a href="preface.html">
+            
+                    
+                    序言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="second_edition_changes.html">
+            
+                <a href="second_edition_changes.html">
+            
+                    
+                    第二版更新内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="glossary.html">
+            
+                <a href="glossary.html">
+            
+                    
+                    词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="ch01.html">
+            
+                <a href="ch01.html">
+            
+                    
+                    第一章介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="ch02.html">
+            
+                <a href="ch02.html">
+            
+                    
+                    第二章比特币原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="ch03.html">
+            
+                <a href="ch03.html">
+            
+                    
+                    第三章比特币核心
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="ch04.html">
+            
+                <a href="ch04.html">
+            
+                    
+                    第四章密钥和地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" data-path="ch05.html">
+            
+                <a href="ch05.html">
+            
+                    
+                    第五章钱包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.12" data-path="ch06.html">
+            
+                <a href="ch06.html">
+            
+                    
+                    第六章交易
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.13" data-path="ch07.html">
+            
+                <a href="ch07.html">
+            
+                    
+                    第七章高级交易和脚本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.14" data-path="ch08.html">
+            
+                <a href="ch08.html">
+            
+                    
+                    第八章比特币网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.15" data-path="ch09.html">
+            
+                <a href="ch09.html">
+            
+                    
+                    第九章区块链
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.16" data-path="ch10.html">
+            
+                <a href="ch10.html">
+            
+                    
+                    第十章挖矿和共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.17" data-path="ch11.html">
+            
+                <a href="ch11.html">
+            
+                    
+                    第十一章比特币安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.18" data-path="ch12.html">
+            
+                <a href="ch12.html">
+            
+                    
+                    第十二章比特币应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.19" data-path="appdx-bips.html">
+            
+                <a href="appdx-bips.html">
+            
+                    
+                    附录1：比特币改进提案（BIP）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.20" data-path="appdx-bitcore.html">
+            
+                <a href="appdx-bitcore.html">
+            
+                    
+                    附录2：Bitcore
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.21" data-path="appdx-bx.html">
+            
+                <a href="appdx-bx.html">
+            
+                    
+                    附录3：Bitcoin Explorer（bx）命令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.22" data-path="fappdx-pycoin.md">
+            
+                <span>
+            
+                    
+                    附录4：pycoin库、实用密钥程序ku和交易程序tx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.23" data-path="appdx-scriptops.html">
+            
+                <a href="appdx-scriptops.html">
+            
+                    
+                    附录5 交易脚本的操作符、常量和符号
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.24" data-path="appdx-bitcoinwhitepaper.html">
+            
+                <a href="appdx-bitcoinwhitepaper.html">
+            
+                    
+                    附录6 比特币白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.25" data-path="appdx-segwit.html">
+            
+                <a href="appdx-segwit.html">
+            
+                    
+                    附录7 隔离见证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.26" data-path="appdx-colored_coins.html">
+            
+                <a href="appdx-colored_coins.html">
+            
+                    
+                    附录8 染色币
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >附录3：Bitcoin Explorer（bx）命令</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x9644;&#x5F55;7&#x3001;&#x6BD4;&#x7279;&#x5E01;&#x6D4F;&#x89C8;&#x5668;&#x547D;&#x4EE4;">&#x9644;&#x5F55;7&#x3001;&#x6BD4;&#x7279;&#x5E01;&#x6D4F;&#x89C8;&#x5668;&#x547D;&#x4EE4;</h1>
+<p>Bitcoin Explorer&#xFF08;bx&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x547D;&#x4EE4;&#x884C;&#x5DE5;&#x5177;&#xFF0C;&#x63D0;&#x4F9B;&#x4E86;&#x5404;&#x79CD;&#x7528;&#x4E8E;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x548C;&#x4EA4;&#x6613;&#x6784;&#x5EFA;&#x7684;&#x547D;&#x4EE4;&#x3002; &#x5B83;&#x662F;libbitcoin&#x6BD4;&#x7279;&#x5E01;&#x5E93;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x3002;</p>
+<pre><code>Usage: bx COMMAND [--help]
+
+
+Info: The bx commands are:
+
+
+address-decode
+address-embed
+address-encode
+address-validate
+base16-decode
+base16-encode
+base58-decode
+base58-encode
+base58check-decode
+base58check-encode
+base64-decode
+base64-encode
+bitcoin160
+bitcoin256
+btc-to-satoshi
+ec-add
+ec-add-secrets
+ec-multiply
+ec-multiply-secrets
+ec-new
+ec-to-address
+ec-to-public
+ec-to-wif
+fetch-balance
+fetch-header
+fetch-height
+fetch-history
+fetch-stealth
+fetch-tx
+fetch-tx-index
+hd-new
+hd-private
+hd-public
+hd-to-address
+hd-to-ec
+hd-to-public
+hd-to-wif
+help
+input-set
+input-sign
+input-validate
+message-sign
+message-validate
+mnemonic-decode
+mnemonic-encode
+ripemd160
+satoshi-to-btc
+script-decode
+script-encode
+script-to-address
+seed
+send-tx
+send-tx-node
+send-tx-p2p
+settings
+sha160
+sha256
+sha512
+stealth-decode
+stealth-encode
+stealth-public
+stealth-secret
+stealth-shared
+tx-decode
+tx-encode
+uri-decode
+uri-encode
+validate-tx
+watch-address
+wif-to-ec
+wif-to-public
+wrap-decode
+wrap-encode
+</code></pre><p>&#x66F4;&#x591A;&#x4FE1;&#x606F;&#x53C2;&#x89C1;<a href="#">Bitcoin Explorer homepage</a> &#x548C; <a href="#">Bitcoin Explorer user documentation</a></p>
+<p>bx&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x793A;&#x4F8B;</p>
+<p>&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E9B;&#x4F7F;&#x7528;Bitcoin Explorer&#x547D;&#x4EE4;&#x6765;&#x6D4B;&#x8BD5;&#x5BC6;&#x94A5;&#x548C;&#x5730;&#x5740;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p>
+<p>&#x4F7F;&#x7528;&#x79CD;&#x5B50;&#x547D;&#x4EE4;&#x751F;&#x6210;&#x968F;&#x673A;&#x201C;&#x79CD;&#x5B50;&#x201D;&#x503C;&#xFF0C;&#x8BE5;&#x79CD;&#x5B50;&#x547D;&#x4EE4;&#x4F7F;&#x7528;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7684;&#x968F;&#x673A;&#x6570;&#x751F;&#x6210;&#x5668;&#x3002; &#x5C06;&#x79CD;&#x5B50;&#x4F20;&#x9012;&#x5230;ec-new&#x547D;&#x4EE4;&#x4EE5;&#x751F;&#x6210;&#x65B0;&#x7684;&#x79C1;&#x94A5;&#x3002; &#x6211;&#x4EEC;&#x5C06;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x4FDD;&#x5B58;&#x5230;&#x6587;&#x4EF6;private_key&#x4E2D;&#xFF1A;</p>
+<pre><code>$ bx seed | bx ec-new &gt; private_key
+$ cat private_key
+73096ed11ab9f1db6135857958ece7d73ea7c30862145bcc4bbc7649075de474
+</code></pre><p>&#x73B0;&#x5728;&#xFF0C;&#x4F7F;&#x7528;ec-to-public&#x547D;&#x4EE4;&#x4ECE;&#x79C1;&#x94A5;&#x751F;&#x6210;&#x516C;&#x94A5;&#x3002; &#x6211;&#x4EEC;&#x5C06;private_key&#x6587;&#x4EF6;&#x4F20;&#x9012;&#x5230;&#x6807;&#x51C6;&#x8F93;&#x5165;&#x5E76;&#x5C06;&#x547D;&#x4EE4;&#x7684;&#x6807;&#x51C6;&#x8F93;&#x51FA;&#x4FDD;&#x5B58;&#x5230;&#x65B0;&#x6587;&#x4EF6;public_key&#x4E2D;&#xFF1A;</p>
+<pre><code>$ bx ec-to-public &lt; private_key &gt; public_key
+$ cat public_key
+02fca46a6006a62dfdd2dbb2149359d0d97a04f430f12a7626dd409256c12be500
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;ec-to-address&#x547D;&#x4EE4;&#x5C06;public_key&#x91CD;&#x65B0;&#x683C;&#x5F0F;&#x5316;&#x4E3A;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x3002; &#x6211;&#x4EEC;&#x5C06;public_key&#x4F20;&#x9012;&#x7ED9;&#x6807;&#x51C6;&#x8F93;&#x5165;&#xFF1A;</p>
+<pre><code>$ bx ec-to-address &lt; public_key
+17re1S4Q8ZHyCP8Kw7xQad1Lr6XUzWUnkG
+</code></pre><p>&#x4EE5;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4EA7;&#x751F;&#x7684;&#x5BC6;&#x94A5;&#x4EA7;&#x751F;&#x96F6;&#x578B;&#x975E;&#x786E;&#x5B9A;&#x6027;&#x94B1;&#x5305;&#x3002; &#x8FD9;&#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x5BC6;&#x94A5;&#x90FD;&#x662F;&#x7531;&#x4E00;&#x4E2A;&#x72EC;&#x7ACB;&#x7684;&#x79CD;&#x5B50;&#x751F;&#x6210;&#x7684;&#x3002; Bitcoin Explorer&#x547D;&#x4EE4;&#x4E5F;&#x53EF;&#x4EE5;&#x6839;&#x636E;BIP-32&#x786E;&#x5B9A;&#x6027;&#x5730;&#x751F;&#x6210;&#x5BC6;&#x94A5;&#x3002; &#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4ECE;&#x79CD;&#x5B50;&#x521B;&#x5EFA;&#x201C;&#x4E3B;&#x201D;&#x952E;&#xFF0C;&#x7136;&#x540E;&#x786E;&#x5B9A;&#x6027;&#x5730;&#x6269;&#x5C55;&#x4EE5;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;&#x5B50;&#x9879;&#x7684;&#x6811;&#xFF0C;&#x4ECE;&#x800C;&#x4EA7;&#x751F;&#x4E00;&#x4E2A;2&#x7C7B;&#x786E;&#x5B9A;&#x6027;&#x94B1;&#x5305;&#x3002;</p>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;seed&#x548C;hd-new&#x547D;&#x4EE4;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x4E3B;&#x5BC6;&#x94A5;&#xFF0C;&#x8BE5;&#x5BC6;&#x94A5;&#x5C06;&#x88AB;&#x7528;&#x4F5C;&#x5BFC;&#x51FA;&#x5BC6;&#x94A5;&#x5C42;&#x6B21;&#x7ED3;&#x6784;&#x7684;&#x57FA;&#x7840;&#xFF1A;</p>
+<pre><code>$ bx seed &gt; seed
+$ cat seed
+eb68ee9f3df6bd4441a9feadec179ff1
+
+
+$ bx hd-new &lt; seed &gt; master
+$ cat master
+xprv9s21ZrQH143K2BEhMYpNQoUvAgiEjArAVaZaCTgsaGe6LsAnwubeiTcDzd23mAoyizm9cApe51gNfLMkBqkYoWWMCRwzfuJk8RwF1SVEpAQ
+</code></pre><p>&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x4F7F;&#x7528;hd-private&#x547D;&#x4EE4;&#x5728;&#x5E10;&#x6237;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F3A;&#x5316;&#x7684;&#x201C;&#x5E10;&#x6237;&#x201D;&#x952E;&#x548C;&#x4E24;&#x4E2A;&#x79C1;&#x94A5;&#x5E8F;&#x5217;&#xFF1A;</p>
+<pre><code>$ bx hd-private --hard &lt; master &gt; account
+$ cat account
+xprv9vkDLt81dTKjwHB8fsVB5QK8cGnzveChzSrtCfvu3aMWvQaThp59ueufuyQ8Qi3qpjk4aKsbmbfxwcgS8PYbgoR2NWHeLyvg4DhoEE68A1n
+
+
+$ bx hd-private --index 0 &lt; account
+xprv9xHfb6w1vX9xgZyPNXVgAhPxSsEkeRcPHEUV5iJcVEsuUEACvR3NRY3fpGhcnBiDbvG4LgndirDsia1e9F3DWPkX7Tp1V1u97HKG1FJwUpU
+
+
+$ bx hd-private --index 1 &lt; account
+xprv9xHfb6w1vX9xjc8XbN4GN86jzNAZ6xHEqYxzbLB4fzHFd6VqCLPGRZFsdjsuMVERadbgDbziCRJru9n6tzEWrASVpEdrZrFidt1RDfn4yA3
+</code></pre><p>&#x63A5;&#x4E0B;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;hd-public&#x547D;&#x4EE4;&#x6765;&#x751F;&#x6210;&#x4E24;&#x4E2A;&#x516C;&#x94A5;&#x7684;&#x76F8;&#x5E94;&#x5E8F;&#x5217;&#xFF1A;</p>
+<pre><code>$ bx hd-public --index 0 &lt; account
+xpub6BH1zcTuktiFu43rUZ2gXqLgzu5F3tLEeTQ5t6iE3aQtM2VMTxMcyLN9fYHiGhGpQe9QQYmqL2eYPFJ3vezHz5wzaSW4FiGrseNDR4LKqTy
+
+
+$ bx hd-public --index 1 &lt; account
+xpub6BH1zcTuktiFx6CzhPbGjG3UYQ13WR16CmtbPiagEKpEVtpyjshWyMaMV1cn7nUPUkgQHPVXJVqsrA8xWbGQDhohEcDFTEYMvYzwRD7Juf8
+</code></pre><p>&#x516C;&#x94A5;&#x4E5F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;hd-to-public&#x547D;&#x4EE4;&#x4ECE;&#x5176;&#x76F8;&#x5E94;&#x7684;&#x79C1;&#x94A5;&#x6D3E;&#x751F;&#xFF1A;</p>
+<pre><code>$ bx hd-private --index 0 &lt; account | bx hd-to-public
+xpub6BH1zcTuktiFu43rUZ2gXqLgzu5F3tLEeTQ5t6iE3aQtM2VMTxMcyLN9fYHiGhGpQe9QQYmqL2eYPFJ3vezHz5wzaSW4FiGrseNDR4LKqTy
+
+
+$ bx hd-private --index 1 &lt; account | bx hd-to-public
+xpub6BH1zcTuktiFx6CzhPbGjG3UYQ13WR16CmtbPiagEKpEVtpyjshWyMaMV1cn7nUPUkgQHPVXJVqsrA8xWbGQDhohEcDFTEYMvYzwRD7Juf8
+</code></pre><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5728;&#x786E;&#x5B9A;&#x6027;&#x94FE;&#x4E2D;&#x4EA7;&#x751F;&#x51E0;&#x4E4E;&#x65E0;&#x9650;&#x6570;&#x91CF;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x5168;&#x90E8;&#x6765;&#x6E90;&#x4E8E;&#x5355;&#x4E2A;&#x79CD;&#x5B50;&#x3002; &#x8FD9;&#x79CD;&#x6280;&#x672F;&#x7528;&#x4E8E;&#x8BB8;&#x591A;&#x94B1;&#x5305;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E2D;&#x4EE5;&#x751F;&#x6210;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5355;&#x4E2A;&#x79CD;&#x5B50;&#x503C;&#x8FDB;&#x884C;&#x5907;&#x4EFD;&#x548C;&#x6062;&#x590D;&#x7684;&#x5BC6;&#x94A5;&#x3002; &#x6BCF;&#x6B21;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x5BC6;&#x94A5;&#x65F6;&#xFF0C;&#x8FD9;&#x6BD4;&#x5C06;&#x5176;&#x6240;&#x6709;&#x968F;&#x673A;&#x751F;&#x6210;&#x7684;&#x5BC6;&#x94A5;&#x5907;&#x4EFD;&#x5728;&#x4E00;&#x8D77;&#x66F4;&#x5BB9;&#x6613;&#x3002;</p>
+<p>&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x52A9;&#x8BB0;&#x7B26;&#x7F16;&#x7801;&#x547D;&#x4EE4;&#x5BF9;&#x79CD;&#x5B50;&#x8FDB;&#x884C;&#x7F16;&#x7801;&#xFF1A;</p>
+<pre><code>$ bx hd-mnemonic &lt; seed &gt; words
+adore repeat vision worst especially veil inch woman cast recall dwell appreciate
+</code></pre><p>&#x7136;&#x540E;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;mnemonic-decode&#x547D;&#x4EE4;&#x5BF9;&#x79CD;&#x5B50;&#x8FDB;&#x884C;&#x89E3;&#x7801;&#xFF1A;</p>
+<pre><code>$ bx mnemonic-decode &lt; words
+eb68ee9f3df6bd4441a9feadec179ff1
+</code></pre><p>&#x52A9;&#x8BB0;&#x7B26;&#x7F16;&#x7801;&#x53EF;&#x4EE5;&#x4F7F;&#x79CD;&#x5B50;&#x66F4;&#x5BB9;&#x6613;&#x8BB0;&#x5F55;&#x751A;&#x81F3;&#x8BB0;&#x4F4F;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="appdx-bitcore.html" class="navigation navigation-prev " aria-label="Previous page: 附录2：Bitcore">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="fappdx-pycoin.md" class="navigation navigation-next " aria-label="Next page: 附录4：pycoin库、实用密钥程序ku和交易程序tx">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"附录3：Bitcoin Explorer（bx）命令","level":"1.21","depth":1,"next":{"title":"附录4：pycoin库、实用密钥程序ku和交易程序tx","level":"1.22","depth":1,"path":"fappdx-pycoin.md","ref":"fappdx-pycoin.md","articles":[]},"previous":{"title":"附录2：Bitcore","level":"1.20","depth":1,"path":"appdx-bitcore.md","ref":"appdx-bitcore.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"appdx-bx.md","mtime":"2018-03-20T07:34:42.597Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-03-21T01:44:41.814Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
